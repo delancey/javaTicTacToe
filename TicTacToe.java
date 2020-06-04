@@ -19,7 +19,6 @@ public class TicTacToe
 
 	public boolean isWinner( char p ) //define a game winner
 	{
-
 		if (p == board[0][0] && p == board[0][1] && p == board[0][2] ||
             p == board[1][0] && p == board[1][1] && p == board[1][2] ||
 			p == board[2][0] && p == board[2][1] && p == board[2][2] ||
@@ -55,7 +54,6 @@ public class TicTacToe
 
 	public boolean isTie() //define if game is a tie
 	{
-
 		if (turns == 9 && !isWinner('X') && !isWinner('O')){
 			return true;
 		};
@@ -73,7 +71,6 @@ public class TicTacToe
 
 	public int numTurns() 
 	{
-		
 		return turns;
 		//if valid move made increase turn number
 	}
@@ -104,7 +101,6 @@ public class TicTacToe
 	{
 		this.board[r][c] = p;
 		this.turns++;
-		System.out.println(this.turns);
 
 		//use board locations to place piece (on this.board)
 		//increase turns when the move is made
